@@ -1,0 +1,13 @@
+# TypeScript 向けには、追加で以下が必要
+npm install typescript @types/node @types/react @types/react-dom
+
+# さらに react-router-dom に対しては、--legacy-peer-deps でのインストール必要
+#（このオプションないとインストールできない）
+npm install @types/react-router-dom --legacy-peer-deps
+
+
+# -------------------------
+npx tsc --init
+
+でデフォルトの tsconfig.json　を生成し、
+さらに通常設定に書き換え
